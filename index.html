@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Wear Enterprises — Stylish and affordable footwear for men and women.">
+  <title>SMART WEAR ENTERPRISES</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #f8fafc, #e5e7eb);
+      color: #111827;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #1e3a8a;
+      margin: 0;
+    }
+
+    .image {
+      border-radius: 1rem;
+      object-fit: cover;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+    }
+
+    section {
+      max-width: 900px;
+      width: 90%;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #1e3a8a;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+      color: #374151;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    input[type="file"] {
+      border: none;
+    }
+
+    button {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #3b82f6;
+    }
+
+    .preview {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .preview img, .preview video {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SMART WEAR ENTERPRISES</h1>
+  </header>
+
+  <img class="image" src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=600" alt="Stylish shoes">
+  <img class="image" src="https://media.istockphoto.com/id/2199551110/photo/low-section-of-woman-walking-on-road-in-mountains.webp?a=1&b=1&s=612x612&w=0&k=20&c=IjmoGk5tMPB0F6YHDUuv1kyBdmWj44iSssWTes6n0Uo=" alt="Walking shoes">
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Smart Wear Enterprises</strong> — your trusted source for stylish and affordable footwear.
+      We offer premium <strong>women’s and men’s shoes</strong> that combine comfort, durability, and fashion — all at unbeatable prices!
+      We also give traders the opportunity to market their shoe brands with us. You can share your personal details and the brands you sell to reach a wider audience.
+    </p>
+  </section>
+
+  <section>
+    <h2>Get in Touch!</h2>
+    <p>Share your information with us so we can connect with you!</p>
+
+    <form id="uploadForm" action="https://formspree.io/f/myzbrbgw" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Contact Information (Email):</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" name="phone" placeholder="Enter your mobile number">
+
+      <p>You can also share your thoughts on which brands to add to our stock or ideas to improve our services!</p>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Share your thoughts..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>How Can You Find Us?</h2>
+    <p>
+      📧 Email: <strong>smartwearenterpriseskenya@gmail.com</strong><br><br>
+      📞 Call: <strong>0781792597</strong><br><br>
+      🌐 Find us on TikTok:<br>
+      <a href="https://www.tiktok.com/@smartwear_enterprises" target="_blank" rel="noopener noreferrer">
+        Visit Smart Wear Enterprises on TikTok
+      </a><br><br>
+      Thanks for trusting our company!
+    </p>
+
+    <div class="preview" id="preview"></div>
+  </section>
+
+  <footer>
+    &copy; 2025 Smart Wear Enterprises. All rights reserved.
+  </footer>
+</body>
+</html>
